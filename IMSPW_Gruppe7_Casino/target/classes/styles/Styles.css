@@ -1,0 +1,35 @@
+#AnchorPane{
+     -fx-background-repeat: no-repeat;
+    -fx-background-image: url('assets/SelectGame.png');
+    -fx-background-position: center;
+    -fx-background-size: 1280px 720px;
+    
+}
+
+#dropdown{
+    
+    -fx-background-color: white;
+    
+}
+
+#button{
+
+    -fx-background-color: black;
+    -fx-text-fill: black;
+    -fx-background-radius: 100em;  
+    -fx-min-width: 50px;  
+    -fx-min-height: 50px; 
+    -fx-max-width: 100px;  
+    -fx-max-height: 100px;
+   
+
+}
+
+
+
+.blackjack{
+   -fx-background-size: 100px 100px;
+    
+     
+
+}

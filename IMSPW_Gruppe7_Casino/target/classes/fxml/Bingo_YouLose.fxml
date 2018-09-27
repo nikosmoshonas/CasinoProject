@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casino.gruppe7.bingo.YouLoseWinController">
+   <children>
+      <ImageView fitHeight="495.0" fitWidth="806.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bingo_img/LoseBackground1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="quit" fitHeight="100.0" fitWidth="179.0" layoutX="14.0" layoutY="381.0" onMouseClicked="#quit" onMouseEntered="#onEnteredQuit" onMouseExited="#onExitedQuit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bingo_img/YouWinScreenQuitButton.png" />
+         </image></ImageView>
+      <ImageView fx:id="playAgainButton" fitHeight="100.0" fitWidth="188.0" layoutX="611.0" layoutY="381.0" onMouseClicked="#playAgain" onMouseEntered="#onEntered" onMouseExited="#onExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bingo_img/PlayAgainButton.png" />
+         </image></ImageView>
+      <Label alignment="CENTER" layoutX="273.0" layoutY="198.0" prefHeight="100.0" prefWidth="257.0" text="You lost!" textFill="#d31f1f">
+         <font>
+            <Font name="American Captain" size="66.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

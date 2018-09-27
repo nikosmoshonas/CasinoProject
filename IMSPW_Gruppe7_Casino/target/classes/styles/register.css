@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27.04.2018, 13:09:20
+    Author     : Nikos
+*/
+
+#AnchorPane{
+    
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('assets/casino.jpg');
+    -fx-background-position: center;
+    -fx-background-size: 450px 600px;
+}
+

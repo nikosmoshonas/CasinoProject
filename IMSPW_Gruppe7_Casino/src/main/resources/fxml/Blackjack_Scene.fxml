@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" stylesheets="@../styles/BlackJack_Style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casino.gruppe7.blackjack.FXMLController">
+    <children>
+      <ImageView fx:id="hit" fitHeight="150.0" fitWidth="200.0" layoutX="550.0" layoutY="770.0" onMouseClicked="#handleHit" onMouseEntered="#btnentered" onMouseExited="#btnexited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../BlackJack_Assets/Hit.png" />
+         </image>
+         <effect>
+            <DropShadow height="18.0" radius="11.5" spread="0.1" width="30.0" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="stand" fitHeight="150.0" fitWidth="200.0" layoutX="850.0" layoutY="770.0" onMouseClicked="#handleStand" onMouseEntered="#btnentered1" onMouseExited="#btnexited1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../BlackJack_Assets/Stand.png" />
+         </image>
+         <effect>
+            <DropShadow height="18.0" radius="11.5" spread="0.1" width="30.0" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="spielen" fitHeight="294.0" fitWidth="440.0" layoutX="570.0" layoutY="282.0" onMouseClicked="#handleSpielen" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../BlackJack_Assets/Play.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="positionS1" fitHeight="202.0" fitWidth="130.0" layoutX="730.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../styles/HERZ_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="positionS2" fitHeight="202.0" fitWidth="130.0" layoutX="750.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../styles/HERZ_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="positionS3" fitHeight="202.0" fitWidth="130.0" layoutX="770.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../styles/HERZ_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="positionS4" fitHeight="202.0" fitWidth="130.0" layoutX="790.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../styles/HERZ_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="positionS5" fitHeight="202.0" fitWidth="130.0" layoutX="810.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../styles/HERZ_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="positionD1" fitHeight="202.0" fitWidth="130.0" layoutX="730.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../styles/HERZ_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="positionD2" fitHeight="202.0" fitWidth="130.0" layoutX="750.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../styles/HERZ_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="positionD3" fitHeight="202.0" fitWidth="130.0" layoutX="770.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../styles/HERZ_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="positionD4" fitHeight="202.0" fitWidth="130.0" layoutX="790.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../styles/HERZ_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="positionD5" fitHeight="202.0" fitWidth="130.0" layoutX="810.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../styles/HERZ_1.png" />
+         </image>
+      </ImageView>
+      <Label id="anzeige" fx:id="wertSpieler" layoutX="993.0" layoutY="640.0" prefHeight="73.0" prefWidth="80.0" styleClass="anzeige" stylesheets="@../styles/BlackJack_Style.css" text="10" textAlignment="CENTER" />
+      <Label id="anzeige" fx:id="wertDealer" layoutX="993.0" layoutY="190.0" prefHeight="73.0" prefWidth="80.0" styleClass="anzeige" stylesheets="@../styles/BlackJack_Style.css" text="10" textAlignment="CENTER" wrapText="true" />
+      <Text fx:id="ausgabe" fill="WHITE" layoutX="65.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="anzeige" text="Text" wrappingWidth="405.9830722808838">
+         <font>
+            <Font size="10.0" />
+         </font></Text>
+      <Label id="anzeige" fx:id="einsatz" layoutX="570.0" layoutY="640.0" prefHeight="63.0" prefWidth="96.0" styleClass="anzeige" stylesheets="@../styles/BlackJack_Style.css" text="00" textAlignment="CENTER" />
+      <ImageView fx:id="white" fitHeight="80.0" fitWidth="80.0" layoutX="30.0" layoutY="450.0" onMouseClicked="#handleBet" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../BlackJack_Assets/white.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="red" fitHeight="80.0" fitWidth="80.0" layoutX="125.0" layoutY="450.0" onMouseClicked="#handleBet" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../BlackJack_Assets/red.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="green" fitHeight="80.0" fitWidth="80.0" layoutX="225.0" layoutY="450.0" onMouseClicked="#handleBet" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../BlackJack_Assets/green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blue" fitHeight="80.0" fitWidth="80.0" layoutX="325.0" layoutY="450.0" onMouseClicked="#handleBet" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../BlackJack_Assets/blue.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="black" fitHeight="80.0" fitWidth="80.0" layoutX="425.0" layoutY="450.0" onMouseClicked="#handleBet" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../BlackJack_Assets/black.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chips" fitHeight="80.0" fitWidth="80.0" layoutX="443.0" layoutY="612.0" pickOnBounds="true" preserveRatio="true" />
+      <Label id="anzeige" fx:id="balance" layoutX="1317.0" layoutY="36.0" prefHeight="63.0" prefWidth="240.0" styleClass="anzeige" stylesheets="@../styles/BlackJack_Style.css" text="10" textAlignment="CENTER" />
+      <ImageView fx:id="neuesSpiel" fitHeight="294.0" fitWidth="440.0" layoutX="570.0" layoutY="282.0" onMouseClicked="#handleNeuesSpiel" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../BlackJack_Assets/neues%20Spiel.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label id="anzeige" layoutX="59.0" layoutY="355.0" prefHeight="73.0" prefWidth="22.0" styleClass="anzeige" stylesheets="@../styles/BlackJack_Style.css" text="5" textAlignment="CENTER" wrapText="true" />
+      <Label id="anzeige" layoutX="149.0" layoutY="355.0" prefHeight="73.0" prefWidth="63.0" styleClass="anzeige" stylesheets="@../styles/BlackJack_Style.css" text="10" textAlignment="CENTER" wrapText="true" />
+      <Label id="anzeige" layoutX="247.0" layoutY="355.0" prefHeight="73.0" prefWidth="63.0" styleClass="anzeige" stylesheets="@../styles/BlackJack_Style.css" text="20" textAlignment="CENTER" wrapText="true" />
+      <Label id="anzeige" layoutX="355.0" layoutY="355.0" prefHeight="73.0" prefWidth="41.0" styleClass="anzeige" stylesheets="@../styles/BlackJack_Style.css" text="50" textAlignment="CENTER" wrapText="true" />
+      <Label id="anzeige" layoutX="450.0" layoutY="355.0" prefHeight="73.0" prefWidth="89.0" styleClass="anzeige" stylesheets="@../styles/BlackJack_Style.css" text="100" textAlignment="CENTER" wrapText="true" />
+      <ImageView fx:id="insurance" fitHeight="50.0" fitWidth="113.0" layoutX="221.0" layoutY="282.0" onMouseClicked="#handleInsureance" onMouseEntered="#insuranceEN" onMouseExited="#insuranceEX" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../BlackJack_Assets/Insurance.png" />
+         </image>
+         <effect>
+            <DropShadow height="18.0" radius="11.5" spread="0.1" width="30.0" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="doubledown" fitHeight="94.0" fitWidth="180.0" layoutX="1080.0" layoutY="780.0" onMouseClicked="#handleDoubledown" onMouseEntered="#doubledownEN" onMouseExited="#doubledownEX" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../BlackJack_Assets/doubledown.png" />
+         </image>
+         <effect>
+            <DropShadow height="18.0" radius="11.5" spread="0.1" width="30.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="239.0" layoutY="787.0" onMouseClicked="#backArrow" onMouseEntered="#backEn" onMouseExited="#backEx" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../styles/assets/backarrow.png" />
+         </image>
+      </ImageView>
+     
+    </children>
+</AnchorPane>

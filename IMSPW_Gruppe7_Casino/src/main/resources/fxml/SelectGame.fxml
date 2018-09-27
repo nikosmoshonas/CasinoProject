@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casino.gruppe7.SelectGameController">
+   <children>
+      <ImageView id="blackjack" fitHeight="210.0" fitWidth="271.0" layoutX="148.0" layoutY="104.0" onMouseClicked="#handleblackjack" onMouseEntered="#blackjackEn" onMouseExited="#blackjackEx" pickOnBounds="true" preserveRatio="true" styleClass="blackjack">
+         <image>
+            <Image url="@../styles/assets/blackjack.png" />
+         </image>
+      </ImageView>
+      <ImageView id="bingo" fitHeight="210.0" fitWidth="309.0" layoutX="550.0" layoutY="104.0" onMouseClicked="#handlebingo" onMouseEntered="#bingoEn" onMouseExited="#bingoEx" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../styles/assets/bingo.png" />
+         </image>
+      </ImageView>
+      <ImageView id="yatzy" fitHeight="262.0" fitWidth="326.0" layoutX="866.0" layoutY="102.0" onMouseClicked="#handleyatzy" onMouseEntered="#yatzyEn" onMouseExited="#yatzyEx" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../styles/assets/yatzy.png" />
+         </image>
+      </ImageView>
+      <ImageView id="roulette" fitHeight="265.0" fitWidth="345.0" layoutX="205.0" layoutY="415.0" onMouseClicked="#handleroulette" onMouseEntered="#rouletteEn" onMouseExited="#rouletteEx" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../styles/assets/roulette.png" />
+         </image>
+      </ImageView>
+      <ImageView id="baccara" fitHeight="210.0" fitWidth="377.0" layoutX="760.0" layoutY="418.0" onMouseClicked="#handlebaccara" onMouseEntered="#baccaraEn" onMouseExited="#baccaraEx" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../styles/assets/baccara.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="580.0" layoutY="520.0" onMouseClicked="#backArrow" onMouseEntered="#backEn" onMouseExited="#backEx" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../styles/assets/backarrow.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="482.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BALANCE:" wrappingWidth="135.71484375">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="userBalance" layoutX="626.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BALANCE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="83.0" fitWidth="83.0" layoutX="52.0" layoutY="28.0" onMouseClicked="#statsIcn" onMouseEntered="#statsEn" onMouseExited="#statsEx" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../styles/assets/stats.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="1169.0" layoutY="38.0" onMouseClicked="#plusIcn" onMouseEntered="#plusEn" onMouseExited="#plusEx" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../styles/assets/plus.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

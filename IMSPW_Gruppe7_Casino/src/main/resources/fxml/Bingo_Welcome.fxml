@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casino.gruppe7.bingo.BingoController">
+   <children>
+      <ImageView fitHeight="900.0" fitWidth="1600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bingo_img/bingoWelcome1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="286.0" fitWidth="1498.0" layoutX="69.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bingo_img/WelcomeToBingoWhite.png" />
+         </image></ImageView>
+      <ImageView fx:id="backButton" fitHeight="154.0" fitWidth="267.0" layoutX="81.0" layoutY="695.0" onMouseClicked="#changePicture" onMouseEntered="#handleEntered" onMouseExited="#handleExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bingo_img/GoBackButton.png" />
+         </image></ImageView>
+      <ImageView fx:id="PlayButton" fitHeight="154.0" fitWidth="267.0" layoutX="1224.0" layoutY="690.0" onMouseClicked="#onPlayAction" onMouseEntered="#handleEnteredPlay" onMouseExited="#handleExitedPlay" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bingo_img/PlayButton.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

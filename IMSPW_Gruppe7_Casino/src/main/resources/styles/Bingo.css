@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05.04.2018, 10:18:19
+    Author     : Pavicic
+*/
+.button {
+    -fx-base: transparent;
+    -fx-text-fill: black;
+    -fx-border-style: solid;
+}
+.toggle-button {
+    -fx-base: transparent;  
+    -fx-font-size: 22;
+    -fx-text-fill: black;
+}
+
+#label {
+    -fx-text-fill: black;
+    
+}
+.anorchpane{
+}
+
+.backgroundGridPaneCard{
+    -fx-background-color: #FFE4C4;
+}
+.gridPaneBound{
+    -fx-background-color: #FFE4C4;
+    -fx-border-style: solid;
+    
+}
+
+.gridPaneTitle{
+    -fx-background-color: #FFE4C4;
+    -fx-background-image: url("/bingo_img/RedStripes.png");
+    -fx-background-size: cover;
+    -fx-border-style: solid;
+}
+
+.vbox{
+    -fx-background-color: #FFE4C4;
+}
+
+.buttonBack{
+    
+}
+
+.AnchorPaneYouWin{
+}
+
+#bingoButton{
+    
+    -fx-background-color: #760c0c;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0.75em;
+}
+
+#buyCardButton{
+    
+    -fx-background-color: #760c0c;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0.75em;
+}
+
+#setButton{
+    -fx-background-color: #760c0c;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0.5em;
+}
+
+#botSlider{
+    -fx-text-fill: white;
+    
+}
+#youWin{
+    -fx-text-fill: white;
+}

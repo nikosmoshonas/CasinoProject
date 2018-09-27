@@ -1,0 +1,28 @@
+.field{
+    -fx-background-radius: 0;
+}
+.coinbutton{
+    -fx-background-radius: 120;
+    -fx-background-color: transparent; 
+}
+.bttn6{
+    -fx-background-image:url('../styles/assets/baccarat/images/chip5000_128.png');
+}
+.bttn5{
+    -fx-background-image:url('../styles/assets/baccarat/images/chip1000_128.png');
+}
+.bttn4{
+    -fx-background-image:url('../styles/assets/baccarat/images/chip500_128.png');
+}
+.bttn3{
+    -fx-background-image:url('../styles/assets/baccarat/images/chip100_128.png');
+}
+.bttn2{
+    -fx-background-image:url('../styles/assets/baccarat/images/chip50_128.png');
+}
+.bttn1{
+    -fx-background-image:url('../styles/assets/baccarat/images/chip10_128.png');
+}
+.anchpane {
+    -fx-background-image:url('../styles/assets/baccarat/images/baccarat_bg_green.png');
+}

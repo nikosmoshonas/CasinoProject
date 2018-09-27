@@ -1,0 +1,52 @@
+.root {
+   -fx-background-image: url("\Tisch.png"); 
+   
+    
+}
+
+#AnchorPane{
+    
+    
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: black;
+    
+    -fx-background-position: center;
+    -fx-background-size: 1600px 900px;
+   
+    
+}
+
+#button{
+    
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 10, 10, 10);
+    -fx-padding: 10;
+    
+}
+
+#pane{
+    
+    -fx-background-color: #494949;
+    
+}
+
+#label{
+    
+   
+     -fx-font-family: 'American Captain';
+    -fx-font-weight: Bold;
+    -fx-font-size: 20px;
+    -fx-font-color: white;
+}
+
+
+
+.anzeige{
+    
+    -fx-font-family: 'American Captain';
+    -fx-font-weight: Bold;
+    -fx-font-size: 30px;
+    -fx-font-color: white;
+}
+

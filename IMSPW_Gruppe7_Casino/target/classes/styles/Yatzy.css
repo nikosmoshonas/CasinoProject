@@ -1,0 +1,35 @@
+#AnchorPane{
+
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('assets/background_yatzy.png');
+    -fx-background-position: center;
+    -fx-background-size: 1600px 900px;
+
+
+}
+
+#button{
+    
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: white;
+    -fx-background-radius: 1em;  
+   
+
+    
+}
+
+#checkButton{
+    
+    -fx-background-color: red;
+    -fx-text-fill: black;
+     -fx-background-radius: 1em; 
+    
+
+    
+}
+
+.image-view-wrapper:border {
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 5;
+}

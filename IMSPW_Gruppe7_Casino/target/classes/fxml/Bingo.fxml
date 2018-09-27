@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casino.gruppe7.bingo.BingoController">
+    <children>
+      <ImageView fitHeight="900.0" fitWidth="1600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../bingo_img/BingoBackground.png" />
+         </image>
+      </ImageView>
+      <GridPane fx:id="ballHolder" layoutX="54.0" layoutY="36.0" prefHeight="813.0" prefWidth="432.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="110.66666412353516" minHeight="10.0" prefHeight="83.99999237060547" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="109.0" prefWidth="80.0" text="B" textFill="WHITE">
+               <font>
+                  <Font name="American Captain" size="96.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="126.0" prefWidth="101.0" text="I" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="American Captain" size="96.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="126.0" prefWidth="101.0" text="N" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="American Captain" size="96.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="126.0" prefWidth="101.0" text="G" textFill="WHITE" GridPane.columnIndex="3">
+               <font>
+                  <Font name="American Captain" size="96.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="126.0" prefWidth="101.0" text="O" textFill="WHITE" GridPane.columnIndex="4">
+               <font>
+                  <Font name="American Captain" size="96.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <AnchorPane layoutX="766.0" layoutY="178.0" prefHeight="216.0" prefWidth="263.0">
+         <children>
+            <ImageView fx:id="bingoBall" fitHeight="216.0" fitWidth="263.0" layoutX="-27.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="ball" alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="94.0" prefHeight="47.0" prefWidth="87.0" text="BingoBall" textAlignment="CENTER">
+               <font>
+                  <Font name="American Captain" size="25.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="1118.0" layoutY="261.0" prefHeight="32.0" prefWidth="47.0" text="Bots:" textFill="#e8e3e3">
+         <font>
+            <Font name="American Captain" size="23.0" />
+         </font></Label>
+      <VBox layoutX="617.0" layoutY="485.0" prefHeight="361.0" prefWidth="461.0" stylesheets="@../styles/Bingo.css">
+         <children>
+            <GridPane prefHeight="111.0" prefWidth="458.0" styleClass="gridPaneTitle" stylesheets="@../styles/Bingo.css">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="103.0" prefWidth="95.0" text="B" textAlignment="CENTER">
+                     <font>
+                        <Font name="American Captain" size="61.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="102.0" prefWidth="100.0" text="I" textAlignment="CENTER" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="American Captain" size="61.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="102.0" prefWidth="100.0" text="N" textAlignment="CENTER" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="American Captain" size="61.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="102.0" prefWidth="100.0" text="G" textAlignment="CENTER" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="American Captain" size="61.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="102.0" prefWidth="86.0" text="O" textAlignment="CENTER" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="American Captain" size="61.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <GridPane prefHeight="23.0" prefWidth="459.0" styleClass="gridPaneBound" stylesheets="@../styles/Bingo.css">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="41.0" prefWidth="107.0" text="1 TO 15" textAlignment="CENTER" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="41.0" prefWidth="107.0" text="16 TO 30" textAlignment="CENTER" GridPane.columnIndex="1" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="96.0" text="31 TO 45" textAlignment="CENTER" GridPane.columnIndex="2" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="41.0" prefWidth="107.0" text="46 TO 60" textAlignment="CENTER" GridPane.columnIndex="3" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="41.0" prefWidth="107.0" text="61 TO 75" textAlignment="CENTER" GridPane.columnIndex="4" />
+               </children>
+            </GridPane>
+            <AnchorPane prefHeight="240.0" prefWidth="491.0" styleClass="backgroundGridPaneCard" stylesheets="@../styles/Bingo.css">
+               <children>
+                  <GridPane fx:id="bingoCard" gridLinesVisible="true" hgap="5.0" prefHeight="240.0" prefWidth="461.0" styleClass="button" stylesheets="@../styles/Bingo.css" vgap="5.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="83.0" minWidth="83.0" prefWidth="83.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="83.0" minWidth="83.0" prefWidth="83.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="83.0" minWidth="83.0" prefWidth="83.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="83.0" minWidth="83.0" prefWidth="83.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="83.0" minWidth="83.0" prefWidth="83.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="42.0" minHeight="42.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="42.0" minHeight="42.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="42.0" minHeight="42.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="42.0" minHeight="42.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="42.0" minHeight="42.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="40.0" prefWidth="83.0" text="Joker" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Slider id="botSlider" fx:id="amountBots" blockIncrement="1.0" layoutX="1188.0" layoutY="257.0" majorTickUnit="1.0" max="10.0" min="5.0" minorTickCount="0" prefHeight="40.0" prefWidth="288.0" showTickLabels="true" snapToTicks="true" stylesheets="@../styles/Bingo.css" value="5.0" />
+      <JFXButton id="buyCardButton" fx:id="buyCardButton" layoutX="1184.0" layoutY="481.0" onAction="#buttonclick" prefHeight="89.0" prefWidth="204.0" stylesheets="@../styles/Bingo.css" text="buy Card!">
+         <font>
+            <Font name="American Captain" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="bingoButton" fx:id="bingoButton" disable="true" layoutX="1187.0" layoutY="622.0" onAction="#handleBingoAction" prefHeight="89.0" prefWidth="206.0" stylesheets="@../styles/Bingo.css" text="bingo!">
+         <font>
+            <Font name="American Captain" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="bingoButton" layoutX="1184.0" layoutY="764.0" onAction="#quitButton" prefHeight="83.0" prefWidth="206.0" stylesheets="@../styles/Bingo.css" text="Quit!">
+         <font>
+            <Font name="American Captain" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="setButton" layoutX="1501.0" layoutY="254.0" onAction="#handleSetAction" prefHeight="48.0" prefWidth="73.0" stylesheets="@../styles/Bingo.css" text="Set!">
+         <font>
+            <Font name="American Captain" size="24.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="1458.0" layoutY="271.0" prefHeight="13.0" prefWidth="37.0" text="10" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="1411.0" layoutY="272.0" prefHeight="25.0" prefWidth="7.0" text="9" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="1353.0" layoutY="272.0" text="8" textFill="#f2f2f2">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="1300.0" layoutY="271.0" text="7" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="1245.0" layoutY="271.0" text="6" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="1189.0" layoutY="271.0" text="5" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <VBox layoutX="1195.0" layoutY="25.0" prefHeight="200.0" prefWidth="168.0">
+         <children>
+            <Label fx:id="players" prefHeight="46.0" prefWidth="168.0" text="Players:" textFill="WHITE">
+               <font>
+                  <Font name="American Captain" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="balance" prefHeight="33.0" prefWidth="187.0" text="Balance: " textFill="WHITE">
+               <font>
+                  <Font name="American Captain" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="timer" prefHeight="52.0" prefWidth="130.0" text="Timer:" textFill="WHITE">
+               <font>
+                  <Font name="American Captain" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label fx:id="potLabel" alignment="CENTER" layoutX="602.0" layoutY="25.0" prefHeight="118.0" prefWidth="482.0" text="Pot" textFill="WHITE">
+         <font>
+            <Font name="American Captain" size="96.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

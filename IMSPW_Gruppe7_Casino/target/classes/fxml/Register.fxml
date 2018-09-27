@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casino.gruppe7.RegisterController">
+   <children>
+      <Pane id="pane" layoutX="50.0" layoutY="47.0" prefHeight="506.0" prefWidth="351.0" stylesheets="@../styles/register.css">
+         <children>
+            <JFXTextField id="username" fx:id="usernamen" focusColor="WHITE" layoutX="72.0" layoutY="82.0" promptText="username" stylesheets="@../styles/register.css" unFocusColor="#4b3f3f">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField id="password" fx:id="email" focusColor="WHITE" layoutX="71.0" layoutY="146.0" promptText="email" stylesheets="@../styles/register.css">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <Label id="label" layoutX="72.0" layoutY="14.0" prefHeight="51.0" prefWidth="226.0" stylesheets="@../styles/Login.css" text="Registration" textFill="#b12222">
+               <font>
+                  <Font name="Georgia" size="28.0" />
+               </font>
+            </Label>
+            <JFXTextField id="password" fx:id="password" focusColor="WHITE" layoutX="71.0" layoutY="206.0" promptText="password" stylesheets="@../styles/register.css">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton id="button" layoutX="62.0" layoutY="396.0" minHeight="49.0" onAction="#click" prefHeight="86.0" prefWidth="87.0" stylesheets="@../styles/Login.css" text="Register" />
+            <JFXButton id="button" layoutX="203.0" layoutY="396.0" minHeight="49.0" onAction="#goBackToLogin" prefHeight="86.0" prefWidth="87.0" stylesheets="@../styles/Login.css" text="Go To Login" />
+         </children>
+         <effect>
+            <DropShadow color="#d97878" height="38.79" radius="17.71" spread="0.34" width="34.05" />
+         </effect>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@../styles/Login.css" />
+      <URL value="@../styles/register.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,0 +1,71 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29.03.2018, 15:02:45
+    Author     : Nikos
+*/
+
+
+
+#AnchorPane{
+
+
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('assets/casino.jpg');
+    -fx-background-position: center;
+    -fx-background-size: 800px 450px;
+
+    
+
+
+}
+
+#button{
+
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-background-radius: 100em;  
+/*    -fx-min-width: 50px;  
+    -fx-min-height: 50px; 
+    -fx-max-width: 100px;  
+    -fx-max-height: 100px;*/
+
+}
+
+#pane{
+
+    -fx-background-color: #202020;
+    -fx-border-radius: 12 12 12 12;
+    -fx-background-radius: 12 12 12 12;
+
+}
+
+#username{
+
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+
+
+}
+
+#password{
+
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+
+}
+
+
+
+#label{
+
+    -fx-font-family: 'American Captain';
+
+
+}
+

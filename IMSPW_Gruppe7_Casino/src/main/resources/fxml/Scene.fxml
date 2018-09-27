@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pani" prefHeight="450.0" prefWidth="800.0" styleClass="AnchorPane" stylesheets="@../styles/Login1Style.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casino.gruppe7.FXMLController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Pane id="pane" layoutX="58.0" layoutY="26.0" prefHeight="368.0" prefWidth="307.0" stylesheets="@../styles/Login.css" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="450.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <JFXButton layoutX="57.0" layoutY="279.0" minHeight="49.0" onAction="#buttonclicked" prefHeight="62.0" prefWidth="63.0" stylesheets="@../styles/Login1Style.css" text="Log in!">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="button" />
+               </styleClass></JFXButton>
+          
+            <Label id="label" layoutX="46.0" layoutY="14.0" stylesheets="@../styles/Login.css" text="CHERRY CASINO" textFill="#b12222">
+               <font>
+                  <Font name="Georgia" size="28.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="166.0" layoutY="279.0" minHeight="49.0" onAction="#signupClicked" prefHeight="62.0" prefWidth="63.0" styleClass="buttonSignUP" stylesheets="@../styles/Login1Style.css" text="Sign UP" />
+            <JFXTextField fx:id="usernamen" layoutX="83.0" layoutY="90.0" promptText="username" styleClass="username" stylesheets="@../styles/Login1Style.css" />
+            <JFXTextField fx:id="password" layoutX="83.0" layoutY="173.0" promptText="password" styleClass="password" stylesheets="@../styles/Login1Style.css" />
+         </children>
+         <effect>
+            <DropShadow color="#d97878" height="38.79" radius="17.71" spread="0.34" width="34.05" />
+         </effect>
+      </Pane>
+    </children>
+</AnchorPane>

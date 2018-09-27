@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchpane" maxHeight="900.0" maxWidth="1920.0" minHeight="900.0" minWidth="1920.0" prefHeight="900.0" prefWidth="1920.0" styleClass="anchpane" stylesheets="@../Roulette_style/Styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casino.gruppe7.roulette.FXMLController">
+   <children>
+      <Label fx:id="setmoneyto" layoutX="237.0" layoutY="453.0" text="setMoneyTo" />
+      <Label fx:id="tolabel" layoutX="545.0" layoutY="830.0" prefHeight="17.0" prefWidth="22.0" text="min" visible="false" AnchorPane.bottomAnchor="53.0" AnchorPane.rightAnchor="1353.0" />
+      <ImageView fx:id="betcoin" fitHeight="150.0" fitWidth="200.0" layoutX="720.0" layoutY="712.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="39.18110656738281" AnchorPane.rightAnchor="1000.0">
+         <image>
+            <Image url="@../Roulette_img/coins.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="600.0" fitWidth="600.0" layoutX="19.0" layoutY="61.0" AnchorPane.leftAnchor="19.0" AnchorPane.topAnchor="61.0">
+         <image>
+            <Image url="@../Roulette_img/body.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wheel" fitHeight="518.0" fitWidth="518.0" layoutX="60.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="101.0">
+         <image>
+            <Image url="@../Roulette_img/wheel.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ball" fitHeight="546.0" fitWidth="450.0" layoutX="95.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="95.0" AnchorPane.topAnchor="135.0">
+         <image>
+            <Image url="@../Roulette_img/wheele.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="1070.0" layoutY="-270.0" rotate="270.0" AnchorPane.bottomAnchor="-93.0" AnchorPane.rightAnchor="445.0">
+         <children>
+            <VBox>
+               <children>
+                  <GridPane fx:id="nullgrid" alignment="TOP_RIGHT" gridLinesVisible="true" minHeight="80.0" prefHeight="80.0" prefWidth="377.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="54.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="251.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <GridPane GridPane.columnIndex="1">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="dzero" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="00" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="zero" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="0">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </GridPane>
+                        <Button fx:id="fivenbet" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="5NB" />
+                     </children>
+                  </GridPane>
+                  <HBox>
+                     <children>
+                        <GridPane fx:id="betgroupgrid" gridLinesVisible="true" maxWidth="100.0" minWidth="100.0" prefWidth="100.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <GridPane fx:id="to18evengrid" gridLinesVisible="true" maxWidth="50.0" minWidth="50.0" prefWidth="50.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button fx:id="to18" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="to18" />
+                                    <Button fx:id="even" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="even" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="redblackgrid" gridLinesVisible="true" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" GridPane.rowIndex="1">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button fx:id="red" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="red" />
+                                    <Button fx:id="black" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="black" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="oddto36grid" gridLinesVisible="true" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" GridPane.rowIndex="2">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button fx:id="to36" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="to36" GridPane.rowIndex="1" />
+                                    <Button fx:id="odd" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="odd" />
+                                 </children>
+                              </GridPane>
+                              <Button fx:id="st12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="1st12" GridPane.columnIndex="1" />
+                              <Button fx:id="nd12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="2nd12" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Button fx:id="rd12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="3rd12" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </GridPane>
+                        <GridPane fx:id="grid63" gridLinesVisible="true" maxWidth="54.0" minWidth="54.0" prefWidth="54.0" vgap="13.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="27.0" minWidth="27.0" prefWidth="27.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="27.0" minWidth="27.0" prefWidth="27.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <children>
+                              <GridPane fx:id="r31" gridLinesVisible="true" maxWidth="27.0" minWidth="27.0" prefWidth="27.0" vgap="13.0" GridPane.columnIndex="1">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button fx:id="three1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" />
+                                    <Button fx:id="three2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="r32" gridLinesVisible="true" vgap="13.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button fx:id="three3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" />
+                                    <Button fx:id="three4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="r33" gridLinesVisible="true" vgap="13.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button fx:id="three5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" />
+                                    <Button fx:id="three6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="r34" gridLinesVisible="true" vgap="13.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button fx:id="three7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" />
+                                    <Button fx:id="three8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="r35" gridLinesVisible="true" vgap="13.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button fx:id="three9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" />
+                                    <Button fx:id="three10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="r36" gridLinesVisible="true" vgap="13.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button fx:id="three11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" />
+                                    <Button fx:id="three12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                              <Button fx:id="six1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" />
+                              <Button fx:id="six2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.rowIndex="1" />
+                              <Button fx:id="six3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.rowIndex="2" />
+                              <Button fx:id="six4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.rowIndex="3" />
+                              <Button fx:id="six5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.rowIndex="4" />
+                              <Button fx:id="six6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.rowIndex="5" />
+                           </children>
+                        </GridPane>
+                        <GridPane fx:id="numbergrid" alignment="BOTTOM_RIGHT" gridLinesVisible="true">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="13.0" minWidth="13.0" prefWidth="13.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="13.0" minWidth="13.0" prefWidth="13.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="13.0" minHeight="13.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="13.0" minHeight="13.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="13.0" minHeight="13.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="13.0" minHeight="13.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="13.0" minHeight="13.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="13.0" minHeight="13.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="13.0" minHeight="13.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="13.0" minHeight="13.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="13.0" minHeight="13.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="13.0" minHeight="13.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="13.0" minHeight="13.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </GridPane>
+                     </children>
+                  </HBox>
+                  <GridPane fx:id="sidebetgrid" alignment="TOP_RIGHT" gridLinesVisible="true" hgap="13.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="75.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="75.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="75.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="80.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="st9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="1st9" />
+                        <Button fx:id="nd9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="2nd9" GridPane.columnIndex="1" />
+                        <Button fx:id="rd9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="3rd9" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ButtonBar buttonMinWidth="0.0" layoutX="1091.0" layoutY="742.0" nodeOrientation="LEFT_TO_RIGHT" AnchorPane.bottomAnchor="35.0" AnchorPane.rightAnchor="35.0">
+        <buttons>
+            <Button fx:id="bttn6" maxHeight="130.0" maxWidth="130.0" minHeight="130.0" minWidth="130.0" mnemonicParsing="false" onAction="#coinbutton" prefHeight="130.0" prefWidth="130.0" stylesheets="@../Roulette_style/Styles.css" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="coinbutton" />
+                  <String fx:value="bttn6" />
+               </styleClass>
+            </Button>
+            <Button fx:id="bttn5" maxHeight="130.0" maxWidth="130.0" minHeight="130.0" minWidth="130.0" mnemonicParsing="false" onAction="#coinbutton" prefHeight="130.0" prefWidth="130.0" stylesheets="@../Roulette_style/Styles.css" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="coinbutton" />
+                  <String fx:value="bttn5" />
+               </styleClass>
+            </Button>
+            <Button fx:id="bttn4" maxHeight="130.0" maxWidth="130.0" minHeight="130.0" minWidth="130.0" mnemonicParsing="false" onAction="#coinbutton" prefHeight="130.0" prefWidth="130.0" stylesheets="@../Roulette_style/Styles.css" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="coinbutton" />
+                  <String fx:value="bttn4" />
+               </styleClass>
+            </Button>
+            <Button fx:id="bttn3" maxHeight="130.0" maxWidth="130.0" minHeight="130.0" minWidth="130.0" mnemonicParsing="false" onAction="#coinbutton" prefHeight="130.0" prefWidth="130.0" stylesheets="@../Roulette_style/Styles.css" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="coinbutton" />
+                  <String fx:value="bttn3" />
+               </styleClass>
+            </Button>
+            <Button fx:id="bttn2" maxHeight="130.0" maxWidth="130.0" minHeight="130.0" minWidth="130.0" mnemonicParsing="false" onAction="#coinbutton" prefHeight="130.0" prefWidth="130.0" stylesheets="@../Roulette_style/Styles.css" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="coinbutton" />
+                  <String fx:value="bttn2" />
+               </styleClass>
+            </Button>
+            <Button fx:id="bttn1" maxHeight="130.0" maxWidth="130.0" minHeight="130.0" minWidth="130.0" mnemonicParsing="false" onAction="#coinbutton" prefHeight="130.0" prefWidth="130.0" stylesheets="@../Roulette_style/Styles.css" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="coinbutton" />
+                  <String fx:value="bttn1" />
+               </styleClass>
+            </Button>
+        </buttons>
+      </ButtonBar>
+      <Label fx:id="numberrolled" alignment="CENTER" layoutX="265.0" layoutY="259.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.0" prefHeight="132.0" prefWidth="98.0">
+         <font>
+            <Font size="90.0" />
+         </font>
+      </Label>
+      <Label fx:id="fromlabel" layoutX="720.0" layoutY="899.0" nodeOrientation="LEFT_TO_RIGHT" text="Label" visible="false" />
+      <ImageView fitHeight="43.0" fitWidth="200.0" layoutX="1697.0" layoutY="9.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <image>
+            <Image url="@../Roulette_img/Unbenannt-1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="account" alignment="CENTER" layoutX="1741.0" layoutY="6.0" prefHeight="34.0" prefWidth="166.0" text="99999" textFill="#fbb03b" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="6.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="43.0" fitWidth="200.0" layoutX="721.0" layoutY="664.0">
+         <image>
+            <Image url="@../Roulette_img/Unbenannt-1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="tobet" alignment="CENTER" contentDisplay="CENTER" layoutX="748.0" layoutY="665.0" opacity="0.0" prefHeight="34.0" prefWidth="166.0" textAlignment="CENTER" textFill="#fbb03b" AnchorPane.rightAnchor="1006.0" AnchorPane.topAnchor="665.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="43.0" fitWidth="200.0" layoutX="322.0" layoutY="819.0">
+         <image>
+            <Image url="@../Roulette_img/Unbenannt-1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="moneybet" alignment="CENTER" layoutX="348.0" layoutY="820.0" opacity="0.0" prefHeight="34.0" prefWidth="166.0" textFill="#fbb03b" AnchorPane.bottomAnchor="41.0" AnchorPane.rightAnchor="1406.0">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+      <ImageView fitHeight="43.0" fitWidth="200.0" layoutX="218.0" layoutY="399.0" AnchorPane.bottomAnchor="458.0" AnchorPane.leftAnchor="218.0">
+         <image>
+            <Image url="@../Roulette_img/Unbenannt-1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="moneywon" alignment="CENTER" contentDisplay="CENTER" layoutX="244.0" layoutY="401.0" opacity="0.0" prefHeight="34.0" prefWidth="166.0" textAlignment="CENTER" textFill="#fbb03b" AnchorPane.bottomAnchor="460.0" AnchorPane.leftAnchor="244.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="75.0" fitWidth="73.0" layoutX="9.0" layoutY="3.0" onMouseClicked="#backArrow" onMouseEntered="#backEn" onMouseExited="#backEx" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <image>
+            <Image url="@../styles/assets/backarrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="73.0" layoutX="19.0" layoutY="802.0" onMouseClicked="#rollIcn" onMouseEntered="#rollEn" onMouseExited="#rollEx" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0">
+         <image>
+            <Image url="@../styles/assets/roll.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
